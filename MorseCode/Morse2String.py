@@ -46,11 +46,11 @@ title.pack(padx=10, pady=10)
 
 
 code = tkinter.StringVar()
-morse_code = customtkinter.CTkEntry(app, width=350, height=50, textvariable=code, fg_color="#323232",text_color="#14FFEC")
+morse_code = customtkinter.CTkEntry(app, width=350, height=50, textvariable=code, fg_color="#323232",text_color="#14FFEC",corner_radius=15)
 morse_code.pack()
 
 
-decode = customtkinter.CTkButton(app, text=" Decode ",text_color="#323232", command=morse_decode, fg_color="#14FFEC", hover_color="#0D7377")
+decode = customtkinter.CTkButton(app, text=" Decode ",text_color="#323232", command=morse_decode, fg_color="#14FFEC", hover_color="#0D7377", corner_radius=20)
 decode.pack(padx=10, pady=10)
 
 your_code_is = customtkinter.CTkLabel(app,text="",text_color="#DAFFFB")

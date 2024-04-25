@@ -30,6 +30,7 @@ def morse_encode():
         string_encoded.configure(text="", text_color="#14FFEC")
         encoded_code = generate_code_from_string(data, input_str)
         string_encoded.configure(text=encoded_code, text_color="#14FFEC")
+        print(encoded_code)
     except:
         string_encoded.configure(text="Oops Invalid Input")
 
@@ -39,11 +40,11 @@ title.pack(padx=10, pady=10)
 
 
 code = tkinter.StringVar()
-morse_code = customtkinter.CTkEntry(app, width=350, height=50, textvariable=code, fg_color="#323232", text_color="#14FFEC")
+morse_code = customtkinter.CTkEntry(app, width=350, height=50, textvariable=code, fg_color="#323232", text_color="#14FFEC", corner_radius=15)
 morse_code.pack()
 
 
-encode = customtkinter.CTkButton(app, text=" Encode ", text_color="#323232", command=morse_encode, fg_color="#14FFEC", hover_color="#0D7377")
+encode = customtkinter.CTkButton(app, text=" Encode ", text_color="#323232", command=morse_encode, fg_color="#14FFEC", hover_color="#0D7377", corner_radius=20)
 encode.pack(padx=10, pady=10)
 
 your_code_is = customtkinter.CTkLabel(app,text="",text_color="#DAFFFB")
