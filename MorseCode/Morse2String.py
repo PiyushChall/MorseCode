@@ -2,6 +2,7 @@ import json
 import tkinter
 import customtkinter
 
+
 # Appearance
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
@@ -37,6 +38,7 @@ def morse_decode():
         string_decoded.configure(text="",text_color="#14FFEC")
         decoded_code = generate_string_from_code(data, input_str)
         string_decoded.configure(text=decoded_code, text_color="#14FFEC")
+
     except:
         string_decoded.configure(text="Oops Invalid Input")
 
